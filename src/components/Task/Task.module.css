@@ -1,0 +1,55 @@
+li {
+    list-style-type:none;
+    width: auto;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+   
+}
+
+
+li > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    /* border: solid palegreen; */
+}
+
+
+input[type="checkbox"] {
+    width: 3em;
+    height: 1.5rem;
+    accent-color: darkcyan;
+    margin-top: 10px;
+}
+
+
+li label {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+li p {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0px;
+}
+
+/* to style the completed tasks with line-through*/
+
+li:has(input[type="checkbox"]:checked){
+   text-decoration: line-through;
+}
+
+.deleteButton{
+    margin-left: auto;
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
